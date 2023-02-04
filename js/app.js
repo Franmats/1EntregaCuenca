@@ -20,12 +20,7 @@ if (mail == "SI") {
     } while (askAgain);
 }
 for (let i=1; i<=meses; i++) {
-    let rendimiento = 0
-    function rendir() {
-        let rendimiento = porcentajeFinal * monto
-        let rend2 = rendimiento + subresultado
-        console.log(rend2)
-    }
+
     let porcentajeFinal = ((porcentaje/100)/12) 
     let subresultado = porcentajeFinal * monto
     let resultado = subresultado + monto 
@@ -34,7 +29,6 @@ for (let i=1; i<=meses; i++) {
     switch (i) {
         case 2:
             nombreMes ="segundo mes"
-            rendir()
             break;
         case 3:
             nombreMes ="tercer mes"
@@ -72,7 +66,12 @@ for (let i=1; i<=meses; i++) {
     }
 
     alert("En el " +nombreMes+ " obtendras un saldo total de " + "$" + resultado.toFixed(2))
-
+/*     let rendimiento = 0
+    function rendir() {
+        let rendimiento = monto - (monto * porcentajeFinal)
+        console.log(rendimiento)
+    }
+    rendir() */
 
 }
 
