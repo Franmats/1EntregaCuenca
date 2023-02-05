@@ -66,13 +66,12 @@ for (let i=1; i<=meses; i++) {
     }
 
     alert("En el " +nombreMes+ " obtendras un saldo total de " + "$" + resultado.toFixed(2))
-/*     let rendimiento = 0
+    let rendimiento = 0
     function rendir() {
-        let rendimiento = monto - (monto * porcentajeFinal)
-        console.log(rendimiento)
+        let rendimiento = monto - (monto/(((porcentaje/100)/12)+1))
+        alert("con un rendimiento en el mes de: " + rendimiento.toFixed(2))
     }
-    rendir() */
-
+    rendir()
 }
 
 
